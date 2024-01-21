@@ -36,7 +36,8 @@ function updateVolunteer()
   }  
 }
 
-
+updateNavbar() ;
+updateVolunteer() ;
 window.addEventListener("resize",updateNavbar) ;
 window.addEventListener("resize",updateVolunteer) ;
 
