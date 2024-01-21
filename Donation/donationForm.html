@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation Form</title>
+    
+    <link href="donation.css" rel="stylesheet">
+
+</head>
+<body>
+
+    <header>
+        <h2>Fuel the Fight Against Hunger</h2>
+        <p>Your support makes a difference. Choose how you'd like to contribute:</p>
+
+        <ul>
+        <li><a href="#financial-donation-form">Financial Donation</a></li>
+        <li><a href="#food-donation-form">Food Donation</a></li>
+        <li><a href="#volunteer-form">Volunteer Your Time</a></li>
+        </ul>
+    </header>
+
+    <div class="donation-type-switcher">
+        <label for="donation-type">Choose Donation Type:</label>
+        <input type="radio" id="financial" name="donation-type" value="financial" checked>
+        <label for="financial">Financial Donation</label>
+        <input type="radio" id="food" name="donation-type" value="food">
+        <label for="food">Food Donation</label>
+        <div class="slider"></div>
+      </div>     
+
+    <main>
+        <section>
+            <div id="financial-donation-form">
+                <form id="financial-donation-form">
+                    <fieldset>
+                    <legend>Financial Donation</legend>
+                    <fieldset>
+                        <legend>Your Information</legend>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="phone">Phone Number (Optional):</label>
+                        <input type="tel" id="phone" name="phone">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Optional Information (Helps Us Personalize Your Experience):</legend>
+                        <label for="motivation">What inspires you to support Zero Hunger?</label>
+                        <div>
+                        <textarea id="motivation" name="motivation"></textarea>
+                        </div>
+                        <label for="impact">Which area would you like your contribution to focus on?</label>
+                        <select id="impact" name="impact">
+                        <option value="education">Education and Training</option>
+                        <option value="market">Market Access for Farmers</option>
+                        <option value="food-drive">Food Drives and Community Outreach</option>
+                        <option value="other">Other (Please Specify)</option>
+                        </select>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Donation Amount</legend>
+                        <label><input type="radio" name="amount" value="10"> $10</label>
+                        <label><input type="radio" name="amount" value="25"> $25</label>
+                        <label><input type="radio" name="amount" value="50"> $50</label>
+                        <label>Other: $ <input type="number" name="custom-amount"></label>
+                        <label><input type="checkbox" name="recurring"> Make this a recurring donation</label>
+                    </fieldset>
+                    <button type="submit" id="gpay-button">Donate Now</button>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+
+        <section>
+            <div id="food-donation-form">
+                <form id="food-donation-form">
+                    <fieldset>
+                    <legend>Food Donation</legend>
+                    <fieldset>
+                        <legend>Your Information</legend>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="phone">Phone Number (Optional):</label>
+                        <input type="tel" id="phone" name="phone">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Donation Details</legend>
+                        <label for="food-types">Select the types of food you can donate (check all that apply):</label>
+                        <ul>
+                        <li><input type="checkbox" id="non-perishables" name="food-types[]" value="non-perishables"> Non-perishables (canned goods, pasta, rice)</li>
+                        <li><input type="checkbox" id="fresh-produce" name="food-types[]" value="fresh-produce"> Fresh produce (fruits, vegetables)</li>
+                        <li><input type="checkbox" id="dairy-proteins" name="food-types[]" value="dairy-proteins"> Dairy and protein products (milk, cheese, eggs, beans)</li>
+                        <li><input type="checkbox" id="other" name="food-types[]" value="other"> Other (Please specify in the text box below)</li>
+                        </ul>
+                        <label for="quantity">Estimated quantity of food donation:</label>
+                        <input type="text" id="quantity" name="quantity">
+                        <div>
+                        <label for="dietary-restrictions">Are there any dietary restrictions your food may have (allergies, gluten-free, etc.)?</label>
+                        <textarea id="dietary-restrictions" name="dietary-restrictions"></textarea>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Drop-Off Information (Optional)</legend>
+                        <label for="preferred-location">Preferred drop-off location (if different from address):</label>
+                        <input type="text" id="preferred-location" name="preferred-location">
+                        <label for="delivery-date">Preferred delivery date:</label>
+                        <input type="date" id="delivery-date" name="delivery-date">
+                    </fieldset>
+                    <button type="submit">Submit Food Donation</button>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+
+    <script src="https://pay.google.com/gp/p/js/pay.js"></script>
+    <script src="donation.js"></script>
+</body>
+</html>
