@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <title>ZH Market</title>
+</head>
+<body>
+    <nav class="flex justify-between min-h-[60px] items-center px-[2vw] sticky top-0 shadow-md shadow-slate-300 z-10 bg-white">
+        <p><img src="" alt="">Zero Hunger</p>
+        <ul class="flex gap-x-5">
+            <li class="cursor-pointer"><a href="../Landing Page/index.html">Home</a></li>
+            <li class="cursor-pointer">Sell</li>
+            <li class="cursor-pointer">Contact</li>
+        </ul>
+    </nav>
+    <main>
+        <div class="filter-head min-h-[60px] flex flex-col gap-x-10 items-center md:flex-row gap-y-[24px] md:justify-between px-[3vw] py-[18px] bg-slate-100">
+            <input type="text" placeholder="search your items" class="rounded-md px-[1vw] py-[12px] border-gray-300 border-2 w-[50vw] md:w-[30vw] focus:outline-gray-400 focus:shadow-md focus:shadow-slate-300">
+            <div class="filters flex min-h-[60px] items-center min-w-[50vw] md:min-w-[30vw] justify-evenly">
+                <p class="font-sans text-xl font-semibold text-slate-500">Filters : </p>
+                <button class="filter bg-emerald-700 text-white px-[2vw] py-[6px] rounded-md" data-category="vegan">Vegan</button>
+                <button class="filter bg-emerald-700 text-white px-[2vw] py-[6px] rounded-md" data-category="dairy">Dairy</button>
+            </div>
+        </div>
+        <div class="items text-sm md:text-lg text-slate-700">
+            <div data-category="vegan" class="item w-[80vw] sm:h-[124px] h-[154px] lg:w-[60vw] mx-auto my-[30px] rounded-lg border-2 border-slate-300 bg-slate-100">
+                <div class="item-image h-[150px] sm:h-[120px] w-[20vw] lg:w-[15vw] bg-slate-400">
+                    <img src="https://www.gsconlinestore.com/wp-content/uploads/2020/12/DRFLO0093-1.jpg" alt="" class=" object-center h-[calc(100%-5px)] mx-auto my-[2.5px] object-cover">
+                </div>
+                <div class="item-name text-3xl text-slate-800 px-[2vw]">Item Name</div>
+                <div class="user flex">
+                    <p class="text-sm"><span class="text-gray-700 text-xs">by</span> user</p>
+                        <img width="20" src="images/badge.svg">
+                </div>
+                <div class="quantity">Quantity : xxx</div>
+                <div class="price">Price : xxx</div>
+                <div class="buy"><button class="bg-emerald-700 text-white hover:bg-emerald-800 px-[2vw] py-[6px] rounded-md">Buy</button></div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
