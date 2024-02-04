@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Zero Hunger</title>
+</head>
+
+<body>
+
+    <nav
+        class="bg-white text-emerald-950 flex w-full min-h-[4rem] flex-row justify-between items-center z-50 sticky top-0 shadow-xl px-5">
+        <div class="logo  text-[2rem]">
+            Zero Hunger
+        </div>
+        <ul class="detail flex gap-x-5">
+            <li>Sign Up</li>
+            <li>Sign In</li>
+            <li>Volunteer</li>
+            <li>About Us</li>
+            <li>FeedBack</li>
+        </ul>
+        <ul class="no-detail flex gap-x-3">
+            <li>Sign In</li>
+            <li>Volunteer</li>
+            <li><button class="cursor-pointer h-2/4 ">More</button></li>
+        </ul>
+    </nav>
+    <header class="carousel my-10">
+
+
+        <div id="default-carousel" class="relative w-full " data-carousel="slide">
+            <!-- Carousel wrapper -->
+            <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+
+                <!-- Item 1 -->
+                <a href="What.html" target="_main" class="cursor-pointer">
+                    <div class="duration-700 ease-in-out w-full  h-full bg-gradient-to-r from-sky-100 to-slate-300 flex"
+                        data-carousel-item>
+                        <img src="images/What.jpg" alt="" class="w-2/4 h-full">
+                        <div class="p-5 flex flex-col justify-center">
+                            <p class="text-red-900 text-[3rem] font-bold py-3 overflow-ellipsis">What is World Hunger?
+                            </p>
+                            <p class="text-[1.2rem] overflow-auto ">
+                                World hunger refers to hunger on a global level. It encompasses all definitions of
+                                hunger and their effects around the world. World hunger highlights all those members of
+                                the human population who do not eat enough or have enough access to food. The global
+                                issue of hunger and food insecurity has shown an alarming increase since 2015, a trend
+                                exacerbated by a combination of factors including the pandemic, conflict, climate
+                                change, and deepening inequalities.
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <!-- Item 2 -->
+                <div class="duration-700 ease-in-out w-full  h-full bg-gradient-to-r from-sky-100 to-slate-300 flex"
+                    data-carousel-item>
+                    <img src="images/Why.jpeg" alt="" class="w-2/4 h-full">
+                    <div class="p-5 flex flex-col justify-center">
+                        <p class="text-red-900 text-[3rem] font-bold py-3">Why should I Care?</p>
+                        <p class="text-[1.2rem] overflow-auto">
+                            By 2022, approximately 735 million people – or 9.2% of the world’s population – found
+                            themselves in a state of chronic hunger – a staggering rise compared to 2019. This data
+                            underscores the severity of the situation, revealing a growing crisis.In addition, an
+                            estimated 2.4 billion people faced moderate to severe food insecurity in 2022. This
+                            classification signifies their lack of access to sufficient nourishment. This number
+                            escalated by an alarming 391 million people compared to 2019.
+                        </p>
+                    </div>
+                </div>
+                <!-- Item 3 -->
+                <div class="duration-700 ease-in-out w-full  h-full bg-gradient-to-r from-sky-100 to-slate-300 flex"
+                    data-carousel-item>
+                    <img src="images/how.webp" alt="" class="w-2/4 h-full">
+                    <div class="p-5 flex flex-col justify-center">
+                        <p class="text-red-900 text-[3rem] font-bold py-3">How Can I help?</p>
+                        <p class="text-[1.2rem] overflow-auto">
+                            Food security requires a multi-dimensional approach – from social protection to safeguard
+                            safe and nutritious food especially for children to transforming food systems to achieve a
+                            more inclusive and sustainable world. There will need to be investments in rural and urban
+                            areas and in social protection so poor people have access to food and can improve their
+                            livelihoods.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Slider indicators -->
+            <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+                <button type="button" class="w-3 h-3 rounded-full" aria-label="Slide 1"
+                    data-carousel-slide-to="0"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-label="Slide 2"
+                    data-carousel-slide-to="1"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-label="Slide 3"
+                    data-carousel-slide-to="2"></button>
+            </div>
+            <!-- Slider controls -->
+            <button type="button"
+                class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                data-carousel-prev>
+                <span
+                    class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M5 1 1 5l4 4" />
+                    </svg>
+                    <span class="sr-only">Previous</span>
+                </span>
+            </button>
+            <button type="button"
+                class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                data-carousel-next>
+                <span
+                    class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="m1 9 4-4-4-4" />
+                    </svg>
+                    <span class="sr-only">Next</span>
+                </span>
+            </button>
+        </div>
+    </header>
+
+    <hr class=" dotted w-[10rem] h-1 mx-auto my-5 bg-gray-400 border-0 rounded md:my-10 dark:bg-gray-700">
+
+    <main class="my-10">
+        <p class="text-emerald-950 text-[2rem] md:text-[3rem] font-bold text-center font-serif my-10">Take Action</p>
+        <div class="callToAction flex flex-row flex-wrap w-full items-center gap-20 justify-center">
+            <div class="card flex flex-col justify-center items-center px-10">
+                <a href="donation.html">
+                    <div class=" min-h-[10rem] w-[200px] h-[250px]">
+                        <img src="images/donation.png" alt="donation"
+                            class="shadow-xl shadow-gray-400 rounded-xl border-gray-300 border-solid border-2 hover:shadow-gray-300">
+                    </div>
+                </a>
+                <button
+                    class="text-emerald-950 text-[2rem] font-serif cursor-pointer my-8 hover:italic ">Donate</button>
+            </div>
+            <div class="card flex flex-col justify-center items-center px-10">
+                <a href="lifestyleGuide">
+                    <div class=" min-h-[10rem] w-[200px] h-[250px]">
+                        <img src="images/lifestyleGuide.png" alt="donation"
+                            class="shadow-xl shadow-gray-400 rounded-xl border-gray-300 border-solid border-2 hover:shadow-gray-300">
+                    </div>
+                </a>
+                <button
+                    class="text-emerald-950 text-[2rem] font-serif cursor-pointer my-8 hover:italic ">Lifestyle
+                    Guide</button>
+            </div>
+            <div class="card flex flex-col justify-center items-center px-10">
+                <a href="farmersMarket.html">
+                    <div class=" min-h-[10rem] w-[200px] h-[250px]">
+                        <img src="images/farmersMarket.png" alt="donation"
+                            class="shadow-xl shadow-gray-400 rounded-xl border-gray-300 border-solid border-2 hover:shadow-gray-300">
+                    </div>
+                </a>
+                <button
+                    class="text-emerald-950 text-[2rem] font-serif cursor-pointer my-8 hover:italic ">Market</button>
+            </div>
+        </div>
+
+        <hr class=" dotted w-[10rem] h-1 mx-auto my-5 bg-gray-400 border-0 rounded md:my-10 dark:bg-gray-700">
+
+        <div class="volunteer w-full ">
+            <p class="my-5 text-emerald-950 text-[2rem] md:text-[3rem] font-serif text-center py-5">Volunteer Action</p>
+
+            <div class="volunteer-content flex">
+                <img src="images/volunteer.webp" alt="langar system"
+                    class="h-[70vh] w-[50vw] rounded-xl shadow-xl shadow-slate-400">
+                <div class="flex flex-col px-8 gap-10">
+                    <div>
+                        <p class=" text-[2rem] py-7 text-emerald-950 overflow-auto">Food Drives (Langar System)</p>
+                        <p class="text-[1.2rem] overflow-auto">Langars are community kitchen services, where food is
+                            prepared and served to common people, especially the poor and needy. They are usually run
+                            using charity and donations made by people and are mostly associated with religious places.
+                        </p>
+                    </div>
+                    <div class="small-cards flex justify-evenly items-center my-8">
+                        <button
+                            class="small-card w-[150px] h-[150px] bg-emerald-100 border-gray-400 border-solid border-2 hover:italic cursor-pointer text-[1.5rem] shadow-xl shadow-slate-500 hover:shadow-slate-300 text-emerald-950 rounded-lg font-bold tracking-wide p-0.5">Organise
+                            A Food Drive</button>
+                        <button
+                            class="small-card w-[150px] h-[150px] bg-emerald-100 border-gray-400 border-solid border-2 hover:italic cursor-pointer text-[1.5rem] shadow-xl shadow-slate-500 hover:shadow-slate-300 text-emerald-950 rounded-lg font-bold tracking-wide p-0.5">Search
+                            Ongoing Food Drives</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class=" dotted w-[10rem] h-1 mx-auto my-5 bg-gray-400 border-0 rounded md:my-10 dark:bg-gray-700">
+
+        <div class="FAQs my-20">
+            <p class="text-emerald-950 text-[2.5rem] text-center font-serif my-10">Facts and Data</p>
+            <div class="flex flex-wrap w-full justify-center gap-20 p-5 ">
+                <div
+                    class="fact bg-slate-100 rounded-lg p-2 w-[200px] h-[120px] text-center shadow-xl shadow-gray-300 border-gray-400 border-solid border-2">
+                    828 million people on Earth go hungry every day, about 10% of the global population</div>
+                <div
+                    class="fact bg-slate-100 rounded-lg p-2 w-[200px] h-[120px] text-center shadow-xl shadow-gray-300 border-gray-400 border-solid border-2">
+                    45% of child deaths under five are linked to hunger and its related causes.</div>
+                <div
+                    class="fact bg-slate-100 rounded-lg p-2 w-[200px] h-[120px] text-center shadow-xl shadow-gray-300 border-gray-400 border-solid border-2">
+                    9 million people die from hunger-causes annually, more than AIDS, malaria and TB combined.</div>
+                <div
+                    class="fact bg-slate-100 rounded-lg p-2 w-[200px] h-[120px] text-center shadow-xl shadow-gray-300 border-gray-400 border-solid border-2">
+                    149 million children suffer from stunted growth and development due to malnutrition.</div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-emerald-900 py-8 px-4 text-white text-center">
+        <div class="container mx-auto flex flex-col items-center">
+            <div class="flex flex-col items-center mb-4">
+                <a href="#" class="text-3xl font-bold hover:text-emerald-400">Zero Hunger</a>
+                <p class="mb-2 text-sm font-medium">Building a world without hunger.</p>
+            </div>
+            <div class="flex flex-wrap items-center">
+                <a href="#" class="mx-4 hover:text-emerald-400">About Us</a>
+                <a href="#" class="mx-4 hover:text-emerald-400">Our Impact</a>
+                <a href="#" class="mx-4 hover:text-emerald-400">Get Involved</a>
+                <a href="#" class="mx-4 hover:text-emerald-400">Contact</a>
+            </div>
+            <div class="mt-4">
+                <a href="#" class="text-emerald-400">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M10 3a1 1 0 01.707.293l3 3a1 1 0 01-1.414 1.414L10 5.414 7.707 7.707a1 1 0 01-1.414-1.414l3-3A1 1 0 0110 3zm-3.707 9.293a1 1 0 011.414 0L10 14.586l2.293-2.293a1 1 0 011.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </a>
+                <a href="#" class="ml-4 text-emerald-400">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z">
+                        </path>
+                    </svg>
+                </a>
+            </div>
+            <p class="mt-4 text-xs text-emerald-600">&copy; 2023 Zero Hunger. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="index.js" defer></script>
+</body>
+</html>
