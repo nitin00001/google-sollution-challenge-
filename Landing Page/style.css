@@ -2,12 +2,82 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:wght@600&display=swap');
+
 * {
     margin: 0;
     padding: 0;
+    font-family: "Nunito", sans-serif;
+}
+
+.what,.why,.how {
+    background-color: rgb(127 29 29) ;
+    max-width: 240px;
+    padding: 2vw;
+    max-height: 300px;
+}
+.questions .heading {
+    font-size: 3rem;
 }
 
 .hide 
 {
     display: none ;
+}
+
+@media only screen and (min-width: 568px) and (max-width:850px) {
+    .what{
+        transform: translateX(20%) ;
+        filter: blur(1.5px);
+        background-color: rgb(55 65 81);
+    }
+    .how {
+        filter: blur(1.5px);
+        transform: translateX(-20%) ;
+        background-color: rgb(55 65 81);
+    }
+    
+    .what:hover {
+        background-color: rgb(127,29,29);
+        filter: blur(0);
+        transform: scale(1.2) translateX(20%) translateY(20%);
+        transition: transform 0.5s ease-in-out 0s;
+        z-index: 30;
+    }
+    .why:hover {
+        background-color: rgb(127,29,29);
+        filter: blur(0);
+        transform: scale(1.2) translateY(20%);
+        transition: transform 0.5s ease-in-out 0s;
+        z-index: 30;
+    }
+    .how:hover {
+        background-color: rgb(127,29,29);
+        filter: blur(0);
+        transform: scale(1.2) translateX(-20%) translateY(20%);
+        transition: transform 0.5s ease-in-out 0s;
+        z-index: 30;
+    }
+}
+
+@media only screen and (max-width: 568px) 
+{
+    .questions {
+        flex-direction: column;
+        row-gap: 2vw;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .what , .why , .how {
+        max-width: 100vw;
+        height: 6rem;
+        width: 80vw ;
+        height: 10vh ;
+        text-align: left;
+    } 
+    .questions .heading {
+        font-size: 2rem;
+    }
 }
