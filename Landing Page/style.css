@@ -14,7 +14,7 @@
 .what,.why,.how {
     background-color: rgb(127 29 29) ;
     max-width: 240px;
-    padding: 2vw;
+    padding: 1vw;
     max-height: 300px;
 }
 .questions .heading {
@@ -24,6 +24,41 @@
 .hide 
 {
     display: none ;
+}
+
+.icon {
+    transform: scale(1) ;
+}
+
+.icon:hover {
+    animation: scaleUp 0.3s ease-in-out ;
+    animation-fill-mode: both;
+}
+
+@keyframes scaleUp {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 5px rgba(0,0,0,0.2) ;
+    }
+    100% {
+        transform: scale(1.1);
+        box-shadow: 0 0 5px rgba(0,0,0,0.6) ;
+    }
+}
+
+.icon:not(:hover) {
+    animation: scaleDown 0.3s ease-in-out;
+}
+
+@keyframes scaleDown {
+    0% {
+        transform: scale(1.1) ;
+        box-shadow: 0 0 5px rgba(0,0,0,0.6) ;
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 5px rgba(0,0,0,0.2) ;
+    }
 }
 
 @media only screen and (min-width: 568px) and (max-width:850px) {
