@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer for them</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Volunteer Page Layout with Modern UI Trends:
+Hero Section:
+
+Fullscreen hero image or video: Show passionate volunteers engaging in the activities mentioned.
+Bold, clear headline: "Make a Difference: Fight Hunger, Educate, Empower."
+Short, impactful description: Briefly explain your mission and impact.
+Prominent CTAs: "Organize a Food Drive," "Join a Nearby Drive," "Educate Communities."
+Opportunities Section:
+
+Card-based layout: Each card represents a specific opportunity with:
+Compelling title and description: Briefly explain the need and impact.
+Location and date/time: Transparency and convenience.
+Skill/experience requirements: Clear expectations and inclusivity.
+Progress bar or volunteer count: Motivate and show urgency.
+CTA button: "Sign Up Now" or "Learn More."
+Filtering options: Allow users to search by location, date, type, skills, etc.
+Impact Section:
+
+Data visualization: Show the impact of volunteers through numbers, charts, or infographics.
+Volunteer stories and testimonials: Showcase the human connection and positive change.
+Quotes from beneficiaries: Highlight the meaningful difference volunteers make.
+Additional Sections:
+
+About Us: Briefly explain your organization, mission, and values.
+Blog: Share inspiring stories, tips, and resources.
+FAQ: Address common questions and concerns.
+Contact: Provide easy ways to connect with your team.
+Overall Design:
+
+Mobile-first approach: Ensure seamless experience on all devices.
+Minimalist and clean design: Focus on content and clarity.
+Large, high-quality images and videos: Capture attention and evoke emotion.
+Contrasting, accessible color palette: Ensure readability and inclusivity.
+Bold typography: Enhance readability and hierarchy.
+Microinteractions: Subtle animations and transitions for engagement.
+Bonus Trends:
+
+Interactive map: Show nearby food drives and educational events.
+Progress tracker: Allow volunteers to track their impact and achievements.
+Gamification elements: Add badges, points, or leaderboards for motivation.
+Social media integration: Encourage sharing and collaboration.
+Accessibility features: Ensure inclusive design for all users. -->
+</head>
+
+<body class="text-gray-800">
+
+    <nav class="bg-white flex w-full min-h-[4rem] flex-row justify-between items-center z-50 sticky top-0 shadow-xl px-5">
+        <div class="logo  text-[2rem]">
+            <p class="hidden sm:inline-block">Zero Hunger</p>
+            <p class="inline-block sm:hidden">ZH</p>
+        </div>
+        <ul class="detail hidden sm:flex gap-x-5">
+            <li>Donate</li>
+            <li>About Us</li>
+            <li>FeedBack</li>
+            <li><img src="images/profile-circle.svg" alt=""></li>
+        </ul>
+        <ul class="no-detail sm:hidden flex gap-x-3">
+            <li><button class="cursor-pointer h-2/4 ">About Us</button></li>
+            <li><img src="images/profile-circle.svg" alt=""></li>
+        </ul>
+    </nav>
+
+    <div class="header min-h-[400px] h-fit bg-cover py-[30px] text-white text-center flex flex-col gap-[40px] justify-center px-[5vw]">
+        <p class="font-extrabold tracking-wider text-[3rem]">Make a Difference:<br> Fight Hunger, Educate, Empower.</p>
+        <p class="font-semibold text-[1.5rem] hidden md:inline-block">Organise food drives , volunteer in ongoing food drives and educate people about the sustainable and healthy lifestyle.</p>
+    </div>
+
+    <hr class="w-[200px] border-2 border-gray-500 my-[50px] mx-auto">
+
+    <ul class="analytics flex flex-col sm:flex-row w-screen items-start px-[3vw] justify-evenly sm:text-center text-lg font-semibold gap-[2vw] my-[80px]">
+        <div class="food-drives-analytics flex flex-row sm:flex-col items-center justify-center basis-[25%] gap-x-5">
+            <div><img src="images/food-donation.svg" alt=""></div>
+            <p>More than 100 Food Drives organised</p>
+        </div>
+        <div class="donation-analytics flex flex-row-reverse text-right sm:text-center sm:flex-col place-self-end sm:place-self-center items-center justify-center basis-[25%] gap-x-5" >
+            <div><img src="images/donation-heart-svgrepo-com.svg" alt=""></div>
+            <p>150+ US dollars donated till now</p>
+        </div>
+        <div class="volunteer-analytics flex flex-row sm:flex-col items-center justify-center basis-[25%] gap-x-5">
+            <div><img src="images/eco-volunteer-svgrepo-com.svg" alt=""></div>
+            <p>500+ People have volunteered in the food drives</p>
+        </div>
+    </ul>
+
+    <div class="callToAction w-screen text-center font-bold flex flex-wrap items-center justify-evenly gap-[50px] px-[50px]"> 
+        <div class="card bg-slate-300 h-[300px] w-[250px] px-[2vw] py-[20px] flex flex-col gap-y-[20px] rounded-md shadow-md shadow-slate-600">
+            <img src="images/food-drive.avif" alt="" class="h-2/4 object-cover">
+            <button class="text-white bg-slate-700 px-[1vw] py-[5px] tracking-wider rounded-md">Organise Food Drive</button>
+            <p>Organise a food drive at your specified location.</p>
+        </div>
+        <div class="card bg-slate-300 h-[300px] w-[250px] px-[2vw] py-[20px] flex flex-col gap-y-[20px] rounded-md shadow-md shadow-slate-600">
+            <img src="images/search-engine.avif" alt="" class="h-2/4 object-cover">
+            <button class="text-white bg-slate-700 px-[1vw] py-[5px] tracking-wider rounded-md">Search Food Drive</button>
+            <p>Search ongoing food drives and volunteerly participate.</p>
+        </div>
+        <div class="card bg-slate-300 h-[300px] w-[250px] px-[2vw] py-[20px] flex flex-col gap-y-[20px] rounded-md shadow-md shadow-slate-600">
+            <img src="images/educate-communities.avif" alt="" class="h-2/4 object-cover">
+            <button class="text-white bg-slate-700 px-[1vw] py-[5px] rounded-md">Educate Communities</button>
+            <p>Spread awareness regarding sustainable and healthy lifestyle.</p>
+        </div>
+    </div>
+
+    <hr class="w-[200px] border-2 border-gray-500 my-[100px] mx-auto">
+
+    <div class="reality min-h-[400px] h-fit p-[5vw] bg-cover text-red-800 my-[2px]">
+        <img src="images/inverted-commas.svg" alt="" class="img1 rotate-180 justify-end">
+        <p class="text-[1.5rem] text-white text-center p-[2vw]">When children don’t have adequate food, it directly affects their ability to fight off infection, and common illnesses can become life-threatening.</p>
+        <img src="images/inverted-commas.svg" alt="" class="img2">
+    </div>
+
+    <footer class="bg-red-950 py-8 px-4 text-white text-center relative">
+        <div class="container mx-auto flex flex-col items-center">
+            <div class="flex flex-col items-center mb-4">
+                <a href="#" class="text-3xl font-bold hover:text-red-800">Zero Hunger</a>
+                <p class="mb-2 text-sm font-medium">Building a world without hunger.</p>
+            </div>
+            <div class="flex flex-wrap items-center">
+                <a href="#" class="mx-4 hover:text-red-800">About Us</a>
+                <a href="#" class="mx-4 hover:text-red-800">Our Impact</a>
+                <a href="#" class="mx-4 hover:text-red-800">Get Involved</a>
+                <a href="#" class="mx-4 hover:text-red-800">Contact</a>
+            </div>
+            <div class="mt-4">
+                <a href="#" class="text-white">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M10 3a1 1 0 01.707.293l3 3a1 1 0 01-1.414 1.414L10 5.414 7.707 7.707a1 1 0 01-1.414-1.414l3-3A1 1 0 0110 3zm-3.707 9.293a1 1 0 011.414 0L10 14.586l2.293-2.293a1 1 0 011.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </a>
+                <a href="#" class="ml-4 text-white">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z">
+                        </path>
+                    </svg>
+                </a>
+            </div>
+            <p class="mt-4 text-xs text-white">&copy; 2023 Zero Hunger. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+
+</html>
