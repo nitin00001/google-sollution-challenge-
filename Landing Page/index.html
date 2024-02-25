@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Zero Hunger</title>
+</head>
+
+<body class="text-gray-800">
+
+    <nav
+        class="bg-white flex w-full min-h-[4rem] flex-row justify-between items-center z-50 sticky top-0 shadow-xl px-5">
+        <div class="logo  text-[2rem]">
+            Zero Hunger
+        </div>
+        <ul class="detail flex gap-x-5">
+            <li>Volunteer</li>
+            <li>About Us</li>
+            <li>FeedBack</li>
+            <li><img src="images/profile-circle.svg" alt=""></li>
+        </ul>
+        <ul class="no-detail flex gap-x-3">
+            <li>Volunteer</li>
+            <li><button class="cursor-pointer h-2/4 ">More</button></li>
+            <li><img src="images/profile-circle.svg" alt=""></li>
+        </ul>
+    </nav>
+    <header class="questions flex w-screen justify-evenly text-white font-bold relative top-[50px]">
+        <div class="what z-0 rounded-md shadow-lg shadow-slate-700 overflow-auto">
+            <p class="heading">What is World Hunger?</p>
+            <hr class="border-white my-[4vh]">
+            <p>World hunger refers to hunger on a global level. It encompasses all definitions of
+                hunger and their effects around the world. World hunger highlights all those members of
+                the human population who do not eat enough or have enough access to food. </p>
+        </div>
+        <div class="why z-10 rounded-md shadow-lg shadow-slate-700 overflow-auto">
+            <p class="heading">Why should I care?</p>
+            <hr class="border-white my-[4vh]">
+            <p>Approximately 735 million people or 9.2% of the world’s population found
+                themselves in a state of chronic hunger a staggering rise compared to 2019. This data
+                underscores the severity of the situation, revealing a growing crisis.</p>
+        </div>
+        <div class="how z-0 rounded-md shadow-lg shadow-slate-700 overflow-auto">
+            <p class="heading">How Can I help?</p>
+            <hr class="border-white my-[4vh]">
+            <p> Food security requires a multi-dimensional approach from social protection to safeguard
+                safe and nutritious food especially for children to transforming food systems to achieve a
+                more inclusive and sustainable world.</p>
+        </div>
+    </header>
+
+    <hr class="relative dotted w-[10rem] h-1 mx-auto top-[100px] my-5 bg-gray-400 border-0 rounded md:my-10 dark:bg-gray-700">
+
+    <main class="my-10 relative top-[100px]">
+        
+        <ul class="analytics flex flex-col sm:flex-row w-screen items-start px-[2vw] justify-evenly sm:text-center text-lg font-semibold gap-[2vw] my-[80px]">
+            <div class="food-drives-analytics flex flex-row sm:flex-col items-center justify-center basis-[25%] gap-x-5">
+                <div><img src="images/food-donation.svg" alt=""></div>
+                <p>More than 100 Food Drives organised</p>
+            </div>
+            <div class="donation-analytics flex flex-row-reverse text-right sm:text-center sm:flex-col place-self-end sm:place-self-center items-center justify-center basis-[25%] gap-x-5" >
+                <div><img src="images/donation-heart-svgrepo-com.svg" alt=""></div>
+                <p>150+ US dollars donated till now</p>
+            </div>
+            <div class="volunteer-analytics flex flex-row sm:flex-col items-center justify-center basis-[25%] gap-x-5">
+                <div><img src="images/eco-volunteer-svgrepo-com.svg" alt=""></div>
+                <p>500+ People have volunteered in the food drives</p>
+            </div>
+        </ul>
+
+        <div class="membership flex flex-col justify-center lg:flex-row items-center px-5 gap-x-8 my-[50px]">
+            <p class="text-[1.5rem] md:text-[2rem] font-bold text-center">Become a part of our family!</p>
+            <div class="buttons">
+                <button class="p-[10px] px-[2vw] bg-red-900 m-3 shadow-slate-700 shadow-md rounded-md text-white text-[1rem] md:text-[1.5rem]">Membership</button>
+                <button class="p-[10px] px-[2vw] bg-red-900 m-3 shadow-slate-700 shadow-md rounded-md text-white text-[1rem] md:text-[1.5rem]">Volunteer</button>
+            </div>
+        </div>
+
+        <hr class=" dotted w-[10rem] h-1 mx-auto my-5 bg-gray-400 border-0 rounded md:my-10 dark:bg-gray-700">
+
+        <div class="reality min-h-[400px] h-fit p-[5vw] bg-cover text-red-800 my-[50px]">
+            <img src="images/inverted-commas.svg" alt="" class="img1 rotate-180 justify-end">
+            <p class="text-[1.5rem] text-white text-center p-[2vw]">When children don’t have adequate food, it directly affects their ability to fight off infection, and common illnesses can become life-threatening.</p>
+            <img src="images/inverted-commas.svg" alt="" class="img2">
+        </div>
+
+        <div class="donation text-center flex flex-col gap-[30px] my-[100px]">
+            <p class="text-[3rem]">Donation</p>
+            <div class="icons flex w-screen justify-evenly items-center text-[1.2rem] sm:text-[1.5rem] flex-wrap gap-[50px] px-[50px] my-[30px]">
+                <button class="icon flex flex-col items-center basis-[60%] sm:basis-[18%]">
+                    <img src="images/money-donation.png" alt="" class="my-[20px]">
+                    Monetary Donation
+                </button>
+                <button class="icon hidden sm:flex sm:flex-col items-center basis-[60%] sm:basis-[18%]">
+                    <img src="images/food-donation.png" alt="" class="my-[20px]">
+                    Donate Food
+                </button>
+                <button class="icon hidden sm:flex sm:flex-col items-center basis-[60%] sm:basis-[18%]">
+                    <img src="images/clothes-donation.png" alt="" class="my-[20px]">
+                    Donate Clothes
+                </button>
+                <button class="icon hidden sm:flex sm:flex-col items-center basis-[60%] sm:basis-[18%]">
+                    <img src="images/book-donation.png" alt="" class="my-[20px]">
+                    Donate Stationary    
+                </button>
+                <button class="icon sm:hidden flex flex-col items-center basis-[60%] sm:basis-[18%]">
+                    <img src="images/food-donation.png" alt="" class="my-[20px]">
+                    Non-Monetary Donation    
+                </button>
+            </div>
+        </div>
+
+        <hr class=" dotted w-[10rem] h-1 mx-auto my-5 bg-gray-400 border-0 rounded md:my-10 dark:bg-gray-700">
+
+        <div class="market min-h-[300px] h-[30vw] bg-[url('images/market.jpg')] bg-cover flex flex-col items-center justify-center gap-[30px] px-[50px] text-center my-[100px]">
+            <p class="text-[1.5rem] sm:text-[2rem] text-white font-extrabold tracking-wider">You can also put your food items on our market!</p>
+            <button class="bg-white px-[3vw] py-[1.5vw] rounded-md text-[1.2rem] font-bold">Sell Products</button>
+            <p class="hidden lg:inline-block text-[1.5rem] text-white tracking-wide font-semibold">Food-drive organisers can buy their food goods at zero-margin price and help the needy people.</p>
+        </div>
+
+        <hr class=" dotted w-[10rem] h-1 mx-auto my-5 bg-gray-400 border-0 rounded md:my-10 dark:bg-gray-700">
+        
+        <div class="lifestyleGuide min-h-[300px] h-[30vw] bg-[url('images/lifestyleGuide.jpg')] bg-cover bg-center flex flex-col items-center justify-center gap-[30px] px-[50px] text-center my-[100px]">
+            <p class="text-[1.5rem] sm:text-[2rem] text-white font-extrabold tracking-wider">Generate the most sustainable Lifestyle for the society customised specially for you!</p>
+            <button class="bg-white px-[3vw] py-[1.5vw] rounded-md text-[1.2rem] font-bold">Generate Lifestyle</button>
+            <p class="hidden lg:inline-block text-[1.5rem] text-white tracking-wide font-semibold">Generate your nutritious diet with minimum ingredients.</p>
+        </div>
+
+        <hr class=" dotted w-[10rem] h-1 mx-auto my-5 bg-gray-400 border-0 rounded md:my-10 dark:bg-gray-700">
+
+        <div class="foodDrives text-center flex flex-col gap-[50px] my-[50px]">
+            <p class="text-[3rem] font-semibold">Food Drives</p>
+            <div
+                class="langar-image h-fit min-h-[300px] w-screen bg-cover bg-center flex flex-col justify-center items-center gap-[5vw] py-[50px] px-[5vw] text-[1.5rem] font-semibold text-white" >
+                <p>
+                    Langars are community kitchen services, where food is
+                    prepared and served to common people, especially the poor and needy. They are usually run
+                    using charity and donations made by people and are mostly associated with religious places.
+                </p>
+                <div class=" min-h-[100px] w-screen flex flex-col sm:flex-row items-center justify-center gap-[5vw] px-[20px]">
+                    <div><button class="bg-red-900 text-white rounded-md shadow-md shadow-black text-[1.2rem] font-semibold px-[3vw] py-[10px]">Oraganise a Food Drive</button>
+                    </div>
+                    <div>
+                        <button class="bg-red-900 text-white rounded-md shadow-md shadow-black text-[1.2rem] font-semibold px-[3vw] py-[10px]">Search ongoing Food Drives</button>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+
+        <hr class=" dotted w-[10rem] h-1 mx-auto my-5 bg-gray-400 border-0 rounded md:my-10 dark:bg-gray-700">
+
+        <div class="FAQs my-20">
+            <p class="text-[2.5rem] text-center font-serif my-10">Facts and Data</p>
+            <div class="flex flex-wrap w-full justify-center gap-20 p-5 ">
+                <div
+                    class="fact bg-slate-100 rounded-lg p-2 w-[200px] h-[120px] text-center shadow-xl shadow-gray-300 border-gray-400 border-solid border-2">
+                    828 million people on Earth go hungry every day, about 10% of the global population</div>
+                <div
+                    class="fact bg-slate-100 rounded-lg p-2 w-[200px] h-[120px] text-center shadow-xl shadow-gray-300 border-gray-400 border-solid border-2">
+                    45% of child deaths under five are linked to hunger and its related causes.</div>
+                <div
+                    class="fact bg-slate-100 rounded-lg p-2 w-[200px] h-[120px] text-center shadow-xl shadow-gray-300 border-gray-400 border-solid border-2">
+                    9 million people die from hunger-causes annually, more than AIDS, malaria and TB combined.</div>
+                <div
+                    class="fact bg-slate-100 rounded-lg p-2 w-[200px] h-[120px] text-center shadow-xl shadow-gray-300 border-gray-400 border-solid border-2">
+                    149 million children suffer from stunted growth due to malnutrition.</div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-red-950 py-8 px-4 text-white text-center relative top-[150px]">
+        <div class="container mx-auto flex flex-col items-center">
+            <div class="flex flex-col items-center mb-4">
+                <a href="#" class="text-3xl font-bold hover:text-red-800">Zero Hunger</a>
+                <p class="mb-2 text-sm font-medium">Building a world without hunger.</p>
+            </div>
+            <div class="flex flex-wrap items-center">
+                <a href="#" class="mx-4 hover:text-red-800">About Us</a>
+                <a href="#" class="mx-4 hover:text-red-800">Our Impact</a>
+                <a href="#" class="mx-4 hover:text-red-800">Get Involved</a>
+                <a href="#" class="mx-4 hover:text-red-800">Contact</a>
+            </div>
+            <div class="mt-4">
+                <a href="#" class="text-white">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M10 3a1 1 0 01.707.293l3 3a1 1 0 01-1.414 1.414L10 5.414 7.707 7.707a1 1 0 01-1.414-1.414l3-3A1 1 0 0110 3zm-3.707 9.293a1 1 0 011.414 0L10 14.586l2.293-2.293a1 1 0 011.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </a>
+                <a href="#" class="ml-4 text-white">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z">
+                        </path>
+                    </svg>
+                </a>
+            </div>
+            <p class="mt-4 text-xs text-white">&copy; 2023 Zero Hunger. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="index.js" defer></script>
+</body>
+</html>
