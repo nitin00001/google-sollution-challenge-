@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer Form</title>
+    <!-- Include Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Include custom styles -->
+    <style>
+        body {
+            font-family: 'Nunito', sans-serif;
+        }
+
+        input,textarea {
+            padding: 10px;
+        }
+
+        .bg-red {
+            background-color: #6c3131;
+        }
+
+        .text-red {
+            color: #6c3131;
+        }
+
+        .bg-gray {
+            background-color: #CCCCCC;
+        }
+
+        .text-gray {
+            color: #CCCCCC;
+        }
+
+        .bg-white {
+            background-color: #FFFFFF;
+        }
+
+        .text-white {
+            color: #FFFFFF;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100">
+    <div class="container mx-auto p-4">
+        <!-- Volunteer Form -->
+        <div class="bg-white rounded-lg shadow-lg p-6 mb-6">
+            <h2 class="text-2xl font-semibold mb-4">Volunteer Form</h2>
+            <form id="volunteerForm">
+                <div class="mb-4">
+                    <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                    <input type="text" id="name" name="name" class="form-input mt-1 block w-full"
+                        placeholder="Your name" required>
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                    <input type="email" id="email" name="email" class="form-input mt-1 block w-full"
+                        placeholder="Your email" required>
+                </div>
+                <div class="mb-4">
+                    <label for="phone" class="block text-sm font-medium text-gray-700">Phone</label>
+                    <input type="tel" id="phone" name="phone" class="form-input mt-1 block w-full"
+                        placeholder="Your phone number" required>
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                    <textarea id="message" name="message" class="form-textarea mt-1 block w-full" rows="4"
+                        placeholder="Your message" required></textarea>
+                </div>
+                <button type="submit" class="bg-red text-white px-4 py-2 rounded hover:bg-gray-700">Submit</button>
+            </form>
+        </div>
+        <!-- Nearby Food Drives -->
+        <div class="bg-white rounded-lg shadow-lg p-6">
+            <h2 class="text-2xl font-semibold mb-4">Nearby Food Drives</h2>
+            <!-- Search Bar -->
+
+            <div class="mb-4">
+                <label for="search" class="block text-sm font-medium text-gray-700">Search</label>
+                <input type="text" id="search" name="search" class="form-input mt-1 block w-full"
+                    placeholder="Search nearby food drives">
+            </div>
+            <!-- List of Food Drives -->
+            <ul id="foodDriveList">
+                <li class="py-2 border-b border-gray-200">
+                    <h3 class="text-lg font-semibold">Food Drive 1</h3>
+                    <p>Description: Food Drive with footfall of 500 near Queen's Flower in Neelon.</p>
+                    <button class="mt-2 bg-gray-600 text-white px-4 py-2 rounded hover:bg-gray-700">Volunteer</button>
+                </li>
+                <li class="py-2 border-b border-gray-200">
+                    <h3 class="text-lg font-semibold">Food Drive 2</h3>
+                    <p>Description: Small scale Food Drive near Chandigarh Road , Samrala.</p>
+                    <button class="mt-2 bg-gray-600 text-white px-4 py-2 rounded hover:bg-gray-700">Volunteer</button>
+                </li>
+                <!-- Add more food drives as needed -->
+            </ul>
+        </div>
+    </div>
+    
+</body>
+
+</html>
